@@ -1,0 +1,16 @@
+# Prisilno koristimo stabilne verzije za Akida/TF stack
+tensorflow>=2.16
+akida>=2.19.1
+cnn2snn>=2.19.1
+quantizeml>=1.2.3
+akida-models
+
+# Ključna linija: NumPy 1.x je obavezan za trenutni onnxscript/quantizeml
+numpy>=1.23.5,<2.0
+
+# Ostalo
+onnx
+tf2onnx
+matplotlib
+scikit-learn
+pyyaml
