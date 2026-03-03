@@ -1,0 +1,37 @@
+(venv) antonio@antonio-IdeaPad-Slim-3-15IAH8:~/Desktop/PEDRo-Event-Based-Dataset/outputs/current_detector$ python3 -c "import tf_keras; print(tf_keras.__version__)"
+2026-03-03 22:57:49.744328: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-03-03 22:57:49.744691: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2026-03-03 22:57:49.747348: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2026-03-03 22:57:49.753587: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1772575069.764631  198942 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1772575069.767881  198942 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1772575069.776162  198942 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1772575069.776178  198942 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1772575069.776180  198942 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1772575069.776181  198942 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-03-03 22:57:49.779179: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2.19.0
+(venv) antonio@antonio-IdeaPad-Slim-3-15IAH8:~/Desktop/PEDRo-Event-Based-Dataset/outputs/current_detector$ pip show tf_keras
+Name: tf_keras
+Version: 2.19.0
+Summary: Deep learning for humans.
+Home-page: https://keras.io/
+Author: Keras team
+Author-email: keras-users@googlegroups.com
+License: Apache 2.0
+Location: /home/antonio/Desktop/PEDRo-Event-Based-Dataset/venv/lib/python3.12/site-packages
+Requires: tensorflow
+Required-by: cnn2snn, quantizeml
+(venv) antonio@antonio-IdeaPad-Slim-3-15IAH8:~/Desktop/PEDRo-Event-Based-Dataset/outputs/current_detector$ pip show tensorflow
+Name: tensorflow
+Version: 2.19.1
+Summary: TensorFlow is an open source machine learning framework for everyone.
+Home-page: https://www.tensorflow.org/
+Author: Google Inc.
+Author-email: packages@tensorflow.org
+License: Apache 2.0
+Location: /home/antonio/Desktop/PEDRo-Event-Based-Dataset/venv/lib/python3.12/site-packages
+Requires: absl-py, astunparse, flatbuffers, gast, google-pasta, grpcio, h5py, keras, libclang, ml-dtypes, numpy, opt-einsum, packaging, protobuf, requests, setuptools, six, tensorboard, termcolor, typing-extensions, wrapt
+Required-by: cnn2snn, tf_keras
